@@ -24,26 +24,26 @@ function updateTime() {
     seconds = '0' + seconds;
   }
 
-  if (date < 5) {
-    var element = document.querySelector(".arg");
-    element.classList.add("lugarVisitado");
-  } 
-  else if (date > 5 && date <= 13) {
-    var element = document.querySelector(".haw");
-    element.classList.add("lugarVisitado");
-  }
-  else if (date >= 14 && date <= 17) {
-    var element = document.querySelector(".loa");
-    element.classList.add("lugarVisitado");
-  }
-  else if (date > 17 && date <= 25) {
-    var element = document.querySelector(".las");
-    element.classList.add("lugarVisitado");
-  }
-  else {
-    var element = document.querySelector(".arg");
-    element.classList.add("lugarVisitado");
-  };
+//   if (date < 5) {
+//     var element = document.querySelector(".arg");
+//     element.classList.add("lugarVisitado");
+//   } 
+//   else if (date > 5 && date <= 13) {
+//     var element = document.querySelector(".haw");
+//     element.classList.add("lugarVisitado");
+//   }
+//   else if (date >= 14 && date <= 17) {
+//     var element = document.querySelector(".loa");
+//     element.classList.add("lugarVisitado");
+//   }
+//   else if (date > 17 && date <= 25) {
+//     var element = document.querySelector(".las");
+//     element.classList.add("lugarVisitado");
+//   }
+//   else {
+//     var element = document.querySelector(".arg");
+//     element.classList.add("lugarVisitado");
+//   };
 
 
   // Horario Argentina
