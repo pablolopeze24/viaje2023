@@ -24,26 +24,27 @@ function updateTime() {
     seconds = '0' + seconds;
   }
 
-//   if (date < 5) {
-//     var element = document.querySelector(".arg");
-//     element.classList.add("lugarVisitado");
-//   } 
-//   else if (date > 5 && date <= 13) {
-//     var element = document.querySelector(".haw");
-//     element.classList.add("lugarVisitado");
-//   }
-//   else if (date >= 14 && date <= 17) {
-//     var element = document.querySelector(".loa");
-//     element.classList.add("lugarVisitado");
-//   }
-//   else if (date > 17 && date <= 25) {
-//     var element = document.querySelector(".las");
-//     element.classList.add("lugarVisitado");
-//   }
-//   else {
-//     var element = document.querySelector(".arg");
-//     element.classList.add("lugarVisitado");
-//   };
+  // if (date < 5) {
+  //   var element = document.querySelector(".arg");
+  //   element.classList.add("lugarVisitado");
+  // } 
+  // else if (date > 5 && date <= 13) {
+  //   var element = document.querySelector(".haw");
+  //   element.classList.add("lugarVisitado");
+  // }
+  // else if (date >= 14 && date <= 17) {
+  //   var element = document.querySelector(".loa");
+  //   element.classList.add("lugarVisitado");
+  // }
+  // else if (date > 17 && date <= 25) {
+  //   var element = document.querySelector(".las");
+  //   element.classList.add("lugarVisitado");
+  // }
+  // else {
+  //   var element = document.querySelector(".arg");
+  //   element.classList.add("lugarVisitado");
+  // };
+
 
 
   // Horario Argentina
@@ -65,8 +66,8 @@ function updateTime() {
   clockV.querySelector('.hoursV').innerHTML = hours -5;
   clockV.querySelector('.minutesV').innerHTML = minutes;
   clockV.querySelector('.secondsV').innerHTML = seconds;
-
 }
+
 
 setInterval(updateTime, 1000);
 
@@ -89,10 +90,10 @@ var x = setInterval(function() {
 
   // Calculate days, hours, minutes and seconds left
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  // var days = 9;
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
 
   // Resultado para Argentina
     let daysArg = days - 21;
@@ -145,6 +146,7 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "";
   }
 }, 1000);
+
 
 
 
