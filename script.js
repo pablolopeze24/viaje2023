@@ -93,17 +93,42 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Resultado para Argentina
-  document.getElementById("countdown").innerHTML = (days -21) + " días ";
 
+  // Resultado para Argentina
+    let daysArg = days - 21;
+    if (daysArg > 0) {
+      document.getElementById("countdown").innerHTML = daysArg + " días ";
+    } else {
+      document.getElementById("countdown").innerHTML = "";
+    }
+  
     // Resultado para Hawaii
-    document.getElementById("countdownH").innerHTML = (days - 20) + " días ";
+    let daysHaw = days - 20;
+    if (daysHaw > 0) {
+      document.getElementById("countdownH").innerHTML = daysHaw + " días ";
+    } else {
+      document.getElementById("countdownH").innerHTML = "";
+    }
+    //document.getElementById("countdownH").innerHTML = (days - 20) + " días ";
 
       // Resultado pala Los Angeles
-  document.getElementById("countdownA").innerHTML = (days - 12) + " días";
+    let daysLos = days - 12;
+    if (daysLos > 0) {
+      document.getElementById("countdownA").innerHTML = daysLos + " días ";
+    } else {
+      document.getElementById("countdownA").innerHTML = "";
+    }
+  //document.getElementById("countdownA").innerHTML = (days - 12) + " días";
 
     // Resultado para Las Vegas
-    document.getElementById("countdownV").innerHTML = (days - 9) + " días";
+    let daysLas = days - 9;
+    if (daysLas > 0) {
+      document.getElementById("countdownV").innerHTML = daysLas + " días ";
+    } else {
+      document.getElementById("countdownV").innerHTML = "";
+    }
+     //document.getElementById("countdownV").innerHTML = (days - 9) + " días";
+  
 
   // If the count down is finished, write some text
   if (distance < 0) {
