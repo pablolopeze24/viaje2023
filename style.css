@@ -1,0 +1,39 @@
+body {
+	text-align: center;
+	margin-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=1800&t=st=1677374253~exp=1677374853~hmac=020bcd6886b959a49d961879a65b5b846f1cac9b6dab5412267b8ad0470a6314);
+	background-size: cover;
+}
+
+
+.contenedorPrincipal {
+	margin-top: 100px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.lugarVisitado {
+	background: rgba(131, 134, 131, 47);
+}
+
+
+.foto {
+	width: 250px;
+	height: 150px;
+	margin: auto;
+}
+
+
+.tiempo {
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+.titulo {
+	font-weight: 600;
+	
+}
