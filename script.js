@@ -100,6 +100,8 @@ var x = setInterval(function() {
       document.getElementById("countdown").innerHTML = daysArg + " días ";
     } else {
       document.getElementById("countdown").innerHTML = "";
+      var element = document.querySelector(".arg");
+      element.classList.add("lugarVisitado");
     }
   
     // Resultado para Hawaii
@@ -108,6 +110,8 @@ var x = setInterval(function() {
       document.getElementById("countdownH").innerHTML = daysHaw + " días ";
     } else {
       document.getElementById("countdownH").innerHTML = "";
+      var element = document.querySelector(".haw");
+      element.classList.remove("lugarVisitado");
     }
     //document.getElementById("countdownH").innerHTML = (days - 20) + " días ";
 
@@ -117,6 +121,9 @@ var x = setInterval(function() {
       document.getElementById("countdownA").innerHTML = daysLos + " días ";
     } else {
       document.getElementById("countdownA").innerHTML = "";
+      var element = document.querySelector(".loa");
+      element.classList.remove("lugarVisitado");
+      document.querySelector(".haw").classList.add("lugarVisitado");
     }
   //document.getElementById("countdownA").innerHTML = (days - 12) + " días";
 
@@ -126,9 +133,11 @@ var x = setInterval(function() {
       document.getElementById("countdownV").innerHTML = daysLas + " días ";
     } else {
       document.getElementById("countdownV").innerHTML = "";
+      var element = document.querySelector(".las");
+      element.classList.remove("lugarVisitado");
+      document.querySelector(".loa").classList.add("lugarVisitado");
     }
      //document.getElementById("countdownV").innerHTML = (days - 9) + " días";
-  
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -136,7 +145,6 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "";
   }
 }, 1000);
-
 
 
 
